@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">tic tac toe</string>
+    <string name="name">Name</string>
+    <string name="name_player_x">Name Player X</string>
+    <string name="next">Next</string>
+    <string name="_0">0</string>
+    <string name="name_player_o">Name Player O</string>
+    <string name="exit">Exit</string>
+    <string name="score">Score</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="save">Save</string>
+    <string name="language">Language</string>
+    <string name="reset">Reset</string>
+    <string name="show_score">Show Score</string>
+    <string name="name_player">Name Player</string>
+    <string name="player_1_is_winner">Player 1 IS Winner</string>
+    <string name="player_2">Player 2</string>
+    <string name="player_1">Player 1</string>
+    <string name="todo">TODO</string>
+    <string name="mode">Mode</string>
+    <string name="sound">Sound</string>
+    <string name="music">music</string>
+    <string name="is_win"> is win!</string>
+    <string name="it_s_a_draw">It\'s a draw!</string>
+</resources>

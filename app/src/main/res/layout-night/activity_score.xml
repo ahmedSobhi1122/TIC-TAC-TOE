@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    tools:context=".ScoreActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/primary_dark"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/day_and_night" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="4"
+            android:fontFamily="@font/dirty_headline"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/setting" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/primary_dark"
+        android:fontFamily="@font/dirty_headline"
+        android:gravity="center"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/tv_score_name1"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/dirty_headline"
+        android:gravity="center"
+        android:text="@string/player_1"
+        android:textColor="@color/primary_dark"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_score_name2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/dirty_headline"
+        android:gravity="center"
+        android:text="@string/player_2"
+        android:textColor="@color/primary_dark"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_x_score"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/primary_dark"
+        android:fontFamily="@font/dirty_headline"
+        android:gravity="center"
+        android:text="@string/x"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_score_name1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_score_name1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score_name1" />
+
+    <TextView
+        android:id="@+id/tv_y_score"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/primary_dark"
+        android:fontFamily="@font/dirty_headline"
+        android:gravity="center"
+        android:text="@string/o"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_score_name2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_score_name2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score_name2" />
+
+    <TextView
+        android:id="@+id/tv_score_player1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/dirty_headline"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textColor="@color/primary_dark"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_y_score"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toEndOf="@+id/tv_x_score"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score_name1" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="3dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/primary_dark"
+        app:layout_constraintEnd_toStartOf="@+id/tv_y_score"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toEndOf="@+id/tv_x_score"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_score_player2"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/dirty_headline"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textColor="@color/primary_dark"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_y_score"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score_name2" />
+
+    <TextView
+        android:id="@+id/tv_winner"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fontFamily="@font/dirty_headline"
+        android:gravity="center"
+        android:text="@string/player_1_is_winner"
+        android:textColor="@color/primary_dark"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@color/primary_dark"
+        android:text="@string/exit"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

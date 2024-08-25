@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tic tac toe</string>
+    <string name="name">الاسم</string>
+    <string name="name_player_x">اسم اللاعب X</string>
+    <string name="next">التالى</string>
+    <string name="_0">0</string>
+    <string name="name_player_o">اسم اللاعب O</string>
+    <string name="exit">خروج</string>
+    <string name="score">النتيجه</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="save">حفظ الاعدادات</string>
+    <string name="language">اللغه</string>
+    <string name="reset">اعادة ضبط</string>
+    <string name="show_score">عرض النتيجه</string>
+    <string name="name_player">اسم اللاعب</string>
+    <string name="player_1_is_winner">اللاعب رقم 1 هو الفائز</string>
+    <string name="player_2">اللاعب رقم 2</string>
+    <string name="player_1">اللاعب رقم 1</string>
+    <string name="todo">TODO</string>
+    <string name="mode">الوضع</string>
+    <string name="sound">الصوت</string>
+    <string name="music">الموسيقى</string>
+    <string name="is_win">هو الفائز</string>
+    <string name="it_s_a_draw">انه تعادل!</string>
+</resources>
